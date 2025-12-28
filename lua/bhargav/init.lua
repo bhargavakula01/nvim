@@ -1,3 +1,3 @@
 require('bhargav.remap')
 require('bhargav.options')
-require('bhargav.packer') -- asdf
+require('bhargav.packer')
