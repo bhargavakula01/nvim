@@ -1,10 +1,10 @@
 local builtin = require('telescope.builtin')
--- vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
-vim.keymap.set('n', '<leader>ff', function()
-    require('telescope.builtin').find_files({
-        cwd = vim.fn.expand('%:p:h')
-    })
-end, { desc = "Find files relative to current file" })
+vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
+-- vim.keymap.set('n', '<leader>ff', function()
+--     require('telescope.builtin').find_files({
+--         cwd = vim.fn.expand('%:p:h')
+--     })
+-- end, { desc = "Find files relative to current file" })
 vim.keymap.set('n', '<C-p>', builtin.git_files, { desc = 'Telescope find Git files' })
 vim.keymap.set('n', '<leader>fg', function()
 	builtin.grep_string({search = vim.fn.input("Grep >")});
